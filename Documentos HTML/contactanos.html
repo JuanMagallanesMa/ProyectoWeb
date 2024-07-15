@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Hotel</title>
+    <link rel="stylesheet" href= "../Documentos CSS/stylecontactanos.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1><a href="../Documentos HTML/home.html">Andy Hotel</a></h1>
+        </div>
+        <nav>
+            <a href="../Documentos HTML/habitaciones.html">Habitaciones y Suites</a>
+            <a href="../Documentos HTML/eventos.html">Reuniones y Eventos</a>
+            <a href="../Documentos HTML/gastronomia.html">Gastronomia</a>
+            <a href="../Documentos HTML/Atracciones.html">Atracciones</a> 
+            <a href="../Documentos HTML/contactanos.html">Contactanos</a> 
+        </nav>
+    </header>
+    <main> 
+        <section id="form-section">
+            <h1>Formulario de Contacto</h1>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <label for="subject">Asunto:</label>
+                <select id="subject" name="subject" required>
+                    <option value="consulta">Consulta</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="Pie-de-pagina">
+        <div class="redes_sociales">
+            <div class="face">
+                <a href="https://www.facebook.com/andyhotelgye/?locale=es_LA"><img width="100" height="100" src="../Img/face.png" alt=""></a>
+            </div>
+            <div class="inst">
+                <a href="https://www.instagram.com/andyhotelgye/?hl=es"><img width="100" height="100" src="../Img/insta.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="contacto">
+            <address>
+                HotelAndy.com<br>
+                Ecuador <br>
+                Escrito por: Karla Mite<br>
+                Correo Electrónico: <a href="mailto:address@ejemplo.com">Grupo6@gmail.com</a><br>           
+                Teléfono: 0999999999 <br>
+            </address>
+        </div>
+    </footer>
+
+</body>
+
+</html>
