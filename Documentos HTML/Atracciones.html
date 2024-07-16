@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../Documentos CSS/styleatracciones.css">
-    
+    <script src="../Documentos JS/scriptatracciones.js"></script>
     <title>Andy Hotel</title>
 </head>
 <body>
@@ -62,37 +62,42 @@
                 <div class="Contenedor-img">
                     <img src="https://live.staticflickr.com/4403/37205174755_408d36b4e8_c.jpg" alt="">
                 </div>
-                <div class="Contenedor-txt">
-                    <article>
-                        <h2>MALECON 2000</h2>
-                        <p>Podra recorrer el Malecon 2000 que esta ubicado a unas pocas cuadras.
-                            El Malecón 2000 es más que un simple paseo marítimo, es un símbolo de Guayaquil y
-                            un testimonio de su historia y evolución. Este lugar marcó el origen de la ciudad, desde este punto se
-                            extendió el progreso urbano y desempeñó un rol fundamental en su evolución y enriquecimiento estético.
-                        </p>
-                    </article>
-                    
-                    <div class="contenedor-button">
-                        <a href="https://maps.app.goo.gl/nR4y62ZrHo2u9as19"><button class="button">Maps</button></a>
+                <div onmouseover="mouseOverMalecon()" onmouseout="mouseOutMalecon()" class="contenedor-art" id= "articuloMalecon">
+                    <div  class="Contenedor-txt" id="malecon">
+                        <article>
+                            <h2>MALECON 2000</h2>
+                            <p class="contenido" id="txt-malecon">
+                                Podra recorrer el Malecon 2000 que esta ubicado a unas pocas cuadras.
+                                El Malecón 2000 es más que un simple paseo marítimo, es un símbolo de Guayaquil y
+                                un testimonio de su historia y evolución.
+                            </p>
+                        </article>
+                        
+                        <div class="contenedor-button" id="button-malecon">
+                            <a href="https://maps.app.goo.gl/nR4y62ZrHo2u9as19"><button class="button">Maps</button></a>
+                        </div>
                     </div>
                         
                 </div>
             </div>
             <div class="Contenedor">
-                <div class="Contenedor-txt">
-                    <article>
-                        <h2>BARRIO LAS PEÑAS </h2>
-                        <p>El barrio Las Peñas es un lugar emblemático de la ciudad de Guayaquil, Ecuador.
-                            Es reconocido por su estilo arquitectónico colonial y es el lugar donde nació la ciudad. <br>
-                            Se encuentra ubicado en las faldas del Cerro Santa Ana, y su nombre se debe a la cantidad de 
-                            peñascos que poseía el cerro cuando los españoles se asentaron allí en el siglo XVI.
-                        </p>
-                    </article>
+                <div onmouseover="mouseOverBarrio()" onmouseout="mouseOutBarrio()" class="contenedor-art" id= "articuloBarrio">
+                    <div class="Contenedor-txt" id="barrio">
+                        <article>
+                            <h2>BARRIO LAS PEÑAS </h2>
+                            <p class="contenido" id="txt-barrio">
+                                El barrio Las Peñas es un lugar emblemático de la ciudad de Guayaquil, Ecuador.
+                                Es reconocido por su estilo arquitectónico colonial y es el lugar donde nació la ciudad.
+                            </p>
+                        </article>
+                        
+                        <div class="contenedor-button" id="button-barrio">
+                            <a href="https://maps.app.goo.gl/VHtytL6Rtz5Aroug9"><button class="button">Maps</button></a>
+                        </div>    
+                    </div>
                     
-                    <div class="contenedor-button">
-                        <a href="https://maps.app.goo.gl/VHtytL6Rtz5Aroug9"><button class="button">Maps</button></a>
-                    </div>    
                 </div>
+
                 <div class="Contenedor-img">
                     <img src="https://elcomercio.pe/resizer/sqxSyWJe1KSKHUDV21DdveL3ceg=/980x528/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/KUXVSPHKIRGQ5ECYLXJA7PZT2Q.jpg" alt="">
                 </div>
@@ -120,5 +125,6 @@
             </address>
         </div>
     </footer>
+    
 </body>
 </html>
