@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 3em;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+  
+}
+#icon-user a{
+    text-decoration: none;
+}
+
+header{
+    
+    width: 100%;
+    height: 225px;
+    background-color: #282828;
+    
+}
+header #banner img{
+    
+    width: 66.67%;
+    height: 225px;
+    float: left;
+    
+}
+header #logo  {
+    
+    width: 33%;
+    height: 112.5px;
+   
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+}
+header #logo img {
+   
+    height: 70px;
+    margin: 8% 1%;
+    float: left;
+}
+header #login {
+    width: 33%;
+    height: 112.5px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#crearcuenta, #iniciarsesion, #icon-user{
+    padding: 10px;
+    color: white;
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#crearcuenta a, #iniciarsesion a, #icon-user span{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 25% 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.button  {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-color: white;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    
+}
+.button:hover{
+    background-color: #000000;
+    color: white;
+    border: 1px solid #575757;
+}
+.contenedor-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 100px;
+    padding: 12px;
+    display: inline-flex;
+
+    
+}
+nav{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #282828;
+    /*position: fixed;
+    top:250px;*/
+    text-align: center;
+    padding: 2px 0;
+}
+
+nav a{
+    display: inline-block;
+    margin: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #4261FF;
+    border-radius: 10px;
+}
+main{
+    float: left;
+}
+footer{
+    float: left;
+    width: 100%;
+}
+
+.Principal{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.fondo{
+    background-image: url('../Img/Fondo-reuniones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.Sub-principal{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 300px;
+    padding: 50px;
+    color: white;
+}
+
+.Sub-principal h2{
+    font-size: 50px;
+}
+
+.Sobre-reuniones{
+    box-sizing: border-box;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 100px;
+}
+
+.Sub-reuniones{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 25px 70px;
+}
+
+.Sub-reuniones h2{
+    font-size: 50px;
+}
+
+.Sub-reuniones p {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.fondo-2{
+    background-image: url('../Img/Presentacion-sobre-habitaciones.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+}
+
+.Contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+
+.Contenedor-img {
+    overflow: hidden;
+}
+
+.Contenedor-img img {
+    height: 100%;
+    width: 100%; 
+    display: block;
+}
+
+.Contenedor-txt {
+    margin: auto 30px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.Contenedor-txt h2 {
+    margin-top: 0;
+}
+
+.Contenedor-txt p{
+    text-align: justify;
+}
+
+
+
+
+
+.Pie-de-pagina{
+    background-color: #282828;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    color: white;
+}
+
+.Pie-de-pagina a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes_sociales{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.redes_sociales img{
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.contacto{
+    font-size: 20px;
+}

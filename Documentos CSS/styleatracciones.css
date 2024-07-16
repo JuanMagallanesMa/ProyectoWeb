@@ -1,49 +1,155 @@
-body{
+*{
     margin: 0;
-    padding-top: 106px;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: #282828;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-header div a{
+.material-symbols-outlined {
     color: white;
+    font-size: 3em;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+  
+}
+#icon-user a{
     text-decoration: none;
 }
 
-nav a{
+header{
+    
+    width: 100%;
+    height: 225px;
+    background-color: #282828;
+    
+}
+header #banner img{
+    
+    width: 66.67%;
+    height: 225px;
+    float: left;
+    
+}
+header #logo  {
+    
+    width: 33%;
+    height: 112.5px;
+   
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+}
+header #logo img {
+   
+    height: 70px;
+    margin: 8% 1%;
+    float: left;
+}
+header #login {
+    width: 33%;
+    height: 112.5px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#crearcuenta, #iniciarsesion, #icon-user{
+    padding: 10px;
+    color: white;
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#crearcuenta a, #iniciarsesion a, #icon-user span{
+    text-decoration: none;
+    color: white;
     margin: 10px;
+    padding: 25% 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.button  {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-color: white;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    
+}
+.button:hover{
+    background-color: #000000;
+    color: white;
+    border: 1px solid #575757;
+}
+.contenedor-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 100px;
+    padding: 12px;
+    display: inline-flex;
+    height: 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+}
+nav{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #282828;
+    /*position: fixed;
+    top:250px;*/
+    text-align: center;
+    padding: 2px 0;
+}
+
+nav a{
+    display: inline-block;
+    margin: 5px;
     box-sizing: border-box;
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 10px;
     transition: background-color 0.3s ease;
-    border-radius: 10px;
+    border-radius: 8px;
+    
 }
+
 
 nav a:hover{
     background-color: #4261FF;
     border-radius: 10px;
 }
 
-
 .Principal{
     height: 70vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
     z-index: 1;
+}
+a{
+    text-decoration: none;
 }
 
 .fondo{
@@ -56,7 +162,9 @@ nav a:hover{
     height: 70vh;
     z-index: -1;
 }
-
+main{
+    float: left;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -64,14 +172,16 @@ nav a:hover{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7); 
+    
 }
 
 .Sub-principal{
     box-sizing: border-box;
     text-align: center;
-    margin: 0 300px;
+    margin: 10%;
     padding: 50px;
     color: white;
+    
 }
 
 
@@ -126,7 +236,7 @@ nav a:hover{
 
 .Contenedor-img img {
     width: 100%; 
-    display: block;
+    
 }
 
 .Contenedor-txt {
@@ -144,28 +254,15 @@ nav a:hover{
     text-align: justify;
 }
 
-button{
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: none;
-    background-color: darkgray;    
-}
 
-a{
-    text-decoration: none;
-    color: black;
-}
 
-button:hover{
-    background-color: #4261FF;
-    transition: background-color 0.3s ease;
-}
 
-a:hover{
-    color: white;
+footer{
+    float: left;
+    width: 100%;
 }
-
 .Pie-de-pagina{
+
     background-color: #282828;
     height: 30vh;
     display: flex;
@@ -188,6 +285,8 @@ a:hover{
 
 .redes_sociales img{
     border-radius: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 .contacto{
