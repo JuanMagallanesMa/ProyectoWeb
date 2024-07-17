@@ -6,13 +6,40 @@
     <title>Andy Hotel</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../Documentos CSS/stylegastronomia.css">
+    <style>
+        body {
+            transition: font-family 0.3s;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.body.onkeydown = function(event) {
+                console.log(`Tecla presionada: ${event.key}`);
+                
+                // Cambiar el tipo de letra dependiendo de la tecla presionada
+                let fontFamily = '';
+                if (event.key === 'a' || event.key === 'A') {
+                    fontFamily = 'Arial, sans-serif';
+                    alert('Fuente cambiada a Arial');
+                } else if (event.key === 's' || event.key === 'S') {
+                    fontFamily = '"Courier New", Courier, monospace';
+                    alert('Fuente cambiada a Courier New');
+                } else if (event.key === 'd' || event.key === 'D') {
+                    fontFamily = '"Times New Roman", Times, serif';
+                    alert('Fuente cambiada a Times New Roman');
+                }
+
+                if (fontFamily) {
+                    document.body.style.fontFamily = fontFamily;
+                }
+            };
+        });
+    </script>
 </head>
 <body>
-
-    
     <header>
-        <section id="banner" ><img src="https://cache.marriott.com/content/dam/marriott-renditions/MCOSA/mcosa-lobby-0028-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" ></section>
-        <section id="logo"  ><a href="../Documentos HTML/home.html"><img  src="../Img/logoandy.png"></a></section>
+        <section id="banner"><img src="https://cache.marriott.com/content/dam/marriott-renditions/MCOSA/mcosa-lobby-0028-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*"></section>
+        <section id="logo"><a href="../Documentos HTML/home.html"><img src="../Img/logoandy.png"></a></section>
         <section id="login">
             <div id="iniciarsesion">
                 <a href="">Iniciar Sesion</a>
@@ -25,18 +52,16 @@
             </div>
         </section>
         <nav>
-            
             <a href="../Documentos HTML/habitaciones.html">Habitaciones y Suites</a>
             <a href="../Documentos HTML/eventos.html">Reuniones y Eventos</a>
             <a href="../Documentos HTML/gastronomia.html">Gastronomia</a>
-            <a href="../Documentos HTML/Atracciones.html">Atracciones</a> 
-            <a href="../Documentos HTML/contactanos.html">Contactanos</a> 
+            <a href="../Documentos HTML/Atracciones.html">Atracciones</a>
+            <a href="../Documentos HTML/contactanos.html">Contactanos</a>
         </nav>
     </header>
     <main>
         <section>
             <div class="fondo"><div class="overlay"></div></div>
-    
             <div class="Principal">
                 <div class="Sub-principal">
                     <h2>Gastronomia</h2>
@@ -45,79 +70,66 @@
         </section>
         <section>
             <div class="fondo-2"><div class="overlay-2"></div></div>
-
             <div class="Sobre-gastronomia">
                 <div class="Sub-gastronomia">
                     <article>
                         <h2>Sobre la Gastronomia</h2>
                         <p>
-                        Este es el lugar ideal para disfrutar de una experiencia gastronómica única. 
-                        Con su elegante ambiente y una variedad de platos exquisitos, te invita a
-                        explorar los sabores locales e internacionales.
+                            Este es el lugar ideal para disfrutar de una experiencia gastronómica única.
+                            Con su elegante ambiente y una variedad de platos exquisitos, te invita a
+                            explorar los sabores locales e internacionales.
                         </p>
-                   
                     </article>
-                    
                 </div>
             </div>
         </section>
         <section>
- <div class="Contenedor">
-        <div class="Contenedor-img">
-            <img src="../Img/gourmet.jpg" alt="">
-        </div>
-        <div class="Contenedor-txt">
-            <article>
-                <h2>LE GOURMET LUNCH & DINNER</h2>
-                <p>Sea nuestro invitado de honor para el almuerzo o cena en uno de los restaurantes mejores calificados del Ecuador. El galardonado Le Gourmet sirve platos locales e internaciones en una atmosfera de alto nivel.</p>
-           
-            </article>
-        </div>
-    </div>
-
-    <div class="Contenedor">
-        <div class="Contenedor-txt">
-            <article>
-                <h2>LA FONDUE DINING</h2>
-                <p>Sumérjase en la diversión de un Fondue. Esta atmósfera relajada es perfecta para una noche entretenida llena de deliciosa comida, incluyendo variedades de quesos, fondues y raclettes complementados con vino y sangría.</p>
-           
-            </article>
-        </div>
-        <div class="Contenedor-img">
-            <img src="../Img/foundue.jpeg" alt="">
-        </div>
-    </div>
-
-    <div class="Contenedor">
-        <div class="Contenedor-img">
-            <img src="../Img/patio-breakfast.jpg" alt="">
-        </div>
-        <div class="Contenedor-txt">
-            <article>
-                <h2>EL PATIO BREAKFAST, LUNCH, & DINNER</h2>
-                <p>Disfrute el que muchos consideran el mejor desayuno buffet de la ciudad. Nuestro restaurante ofrece una perfecta selección de cocina Ecuatoriana e internacional, variedades en desayuno, almuerzo y cena.</p>
-    
-            </article>
-         </div>
-    </div>
-
-    <div class="Contenedor">
-        <div class="Contenedor-txt">
-            <article>
-                <h2>GOURMET DELI GRAB AND GO</h2>
-                <p>¿De apuro? Gourmet Deli es ideal para platos recién elaborados que puede llevar sobre la marcha. Café, croissants, ensaladas, pastelería suiza, chocolates y trufas elaboradas en casa son solo algunas de las deliciosas opciones.</p>
-    
-            </article>
-        </div>
-        <div class="Contenedor-img">
-            <img src="../Img/deli.jpeg" alt="">
-        </div>
-    </div>
+            <div class="Contenedor">
+                <div class="Contenedor-img">
+                    <img src="../Img/gourmet.jpg" alt="">
+                </div>
+                <div class="Contenedor-txt">
+                    <article>
+                        <h2>LE GOURMET LUNCH & DINNER</h2>
+                        <p>Sea nuestro invitado de honor para el almuerzo o cena en uno de los restaurantes mejores calificados del Ecuador. El galardonado Le Gourmet sirve platos locales e internaciones en una atmosfera de alto nivel.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="Contenedor">
+                <div class="Contenedor-txt">
+                    <article>
+                        <h2>LA FONDUE DINING</h2>
+                        <p>Sumérjase en la diversión de un Fondue. Esta atmósfera relajada es perfecta para una noche entretenida llena de deliciosa comida, incluyendo variedades de quesos, fondues y raclettes complementados con vino y sangría.</p>
+                    </article>
+                </div>
+                <div class="Contenedor-img">
+                    <img src="../Img/foundue.jpeg" alt="">
+                </div>
+            </div>
+            <div class="Contenedor">
+                <div class="Contenedor-img">
+                    <img src="../Img/patio-breakfast.jpg" alt="">
+                </div>
+                <div class="Contenedor-txt">
+                    <article>
+                        <h2>EL PATIO BREAKFAST, LUNCH, & DINNER</h2>
+                        <p>Disfrute el que muchos consideran el mejor desayuno buffet de la ciudad. Nuestro restaurante ofrece una perfecta selección de cocina Ecuatoriana e internacional, variedades en desayuno, almuerzo y cena.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="Contenedor">
+                <div class="Contenedor-txt">
+                    <article>
+                        <h2>GOURMET DELI GRAB AND GO</h2>
+                        <p>¿De apuro? Gourmet Deli es ideal para platos recién elaborados que puede llevar sobre la marcha. Café, croissants, ensaladas, pastelería suiza, chocolates y trufas elaboradas en casa son solo algunas de las deliciosas opciones.</p>
+                    </article>
+                </div>
+                <div class="Contenedor-img">
+                    <img src="../Img/deli.jpeg" alt="">
+                </div>
+            </div>
         </section>
     </main>
-    
-   
-
     <footer class="Pie-de-pagina">
         <div class="redes_sociales">
             <div class="face">
@@ -132,7 +144,7 @@
                 HotelAndy.com<br>
                 Ecuador <br>
                 Escrito por: Joffre Arriaga<br>
-                Correo Electrónico: <a href="mailto:address@ejemplo.com">Grupo6@gmail.com</a><br>           
+                Correo Electrónico: <a href="mailto:address@ejemplo.com">Grupo6@gmail.com</a><br>
                 Teléfono: 0999999999 <br>
             </address>
         </div>
