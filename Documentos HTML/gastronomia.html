@@ -11,30 +11,7 @@
             transition: font-family 0.3s;
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.body.onkeydown = function(event) {
-                console.log(`Tecla presionada: ${event.key}`);
-                
-                // Cambiar el tipo de letra dependiendo de la tecla presionada
-                let fontFamily = '';
-                if (event.key === 'a' || event.key === 'A') {
-                    fontFamily = 'Arial, sans-serif';
-                    alert('Fuente cambiada a Arial');
-                } else if (event.key === 's' || event.key === 'S') {
-                    fontFamily = '"Courier New", Courier, monospace';
-                    alert('Fuente cambiada a Courier New');
-                } else if (event.key === 'd' || event.key === 'D') {
-                    fontFamily = '"Times New Roman", Times, serif';
-                    alert('Fuente cambiada a Times New Roman');
-                }
-
-                if (fontFamily) {
-                    document.body.style.fontFamily = fontFamily;
-                }
-            };
-        });
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
