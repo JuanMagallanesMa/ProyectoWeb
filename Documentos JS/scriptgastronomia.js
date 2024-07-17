@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.body.onkeydown = function(event) {
         console.log(`Tecla presionada: ${event.key}`);
         
+        // Cambiar el tipo de letra dependiendo de la tecla presionada
         let fontFamily = '';
         if (event.key === 'a' || event.key === 'A') {
             fontFamily = 'Arial, sans-serif';
