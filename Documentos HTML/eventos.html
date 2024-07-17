@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Hotel</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="stylesheet" href="../Documentos CSS/styleeventos.css">
+    <script src="../Documentos JS/scriptReunionesEventos.js"></script>
+    <title>Andy Hotel</title>
 </head>
 <body>
-
     <header>
-        <section id="banner" ><img src="https://cache.marriott.com/content/dam/marriott-renditions/MCOSA/mcosa-lobby-0028-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" ></section>
-        <section id="logo"  ><a href="../Documentos HTML/home.html"><img  src="../Img/logoandy.png"></a></section>
+        <section id="banner" ><img src="https://cache.marriott.com/content/dam/marriott-renditions/MCOSA/mcosa-lobby-0028-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" onclick="bgChange()"></section>
+        <section id="logo" onclick="return confirmarAccion()"><a href="../Documentos HTML/home.html"><img  src="../Img/logoandy.png"></a></section>
         <section id="login">
             <div id="iniciarsesion">
                 <a href="">Iniciar Sesion</a>
@@ -35,31 +35,32 @@
     </header>
     <main>
         <section>
-            <div class="fondo"><div class="overlay"></div></div>
-        
-            <div class="Principal">
-                <div class="Sub-principal">
-                    <h2>Reuniones y Eventos</h2>
+            <div class="fondo">  <div class="overlay"></div></div>
+                <div class="Principal">
+                    <div class="Sub-principal">
+                    <h2 id="CambioColor" onclick="CambioColor()">Reuniones y Eventos</h2>
+                    </div>
                 </div>
-            </div>
+
+            
         </section>
+
         <section>
             <div class="fondo-2"><div class="overlay-2"></div></div>
-
             <div class="Sobre-reuniones">
                 <div class="Sub-reuniones">
                     <article>
                         <h2>Alojamiento para Grupos & Eventos en Guayaquil</h2>
                         <p>¿En búsqueda de hospedaje para grupos en Guayaquil? No busque más, en Andy Hotel Guayaquil contamos con 236 habitaciones recientemente renovadas y 2,142m2 de espacio para eventos en los cuales se pueden ubicar grupos de cualquier tamaño.</p>
-                    
                     </article>
                     
                 </div>
             </div>
         </section>
-        <section>
+        
+        <section onclick="cambiarColor()">
             <div class="Contenedor">
-                <div class="Contenedor-img">
+                <div class="Contenedor-img" >
                     <img src="../Img/Reservaciones.jpeg" alt="">
                 </div>
                 <div class="Contenedor-txt">
