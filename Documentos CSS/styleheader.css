@@ -7,7 +7,7 @@ body{
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/*manejamos el color, el tamaño del icono, si lo queremos relleno, el grosor, y mas atributos  */
 .material-symbols-outlined {
     color: white;
     font-size: 3em;
