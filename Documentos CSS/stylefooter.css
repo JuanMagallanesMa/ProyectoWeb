@@ -1,0 +1,43 @@
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+.Pie-de-pagina{
+    background-color: #282828;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    color: white;
+}
+
+.Pie-de-pagina a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes_sociales{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.redes_sociales img{
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.contacto{
+    font-size: 20px;
+}
+
+  

@@ -5,7 +5,7 @@ function mouseOverMalecon(){
     document.getElementById("button-malecon").style.cssText = "display: flex";
     document.getElementById("malecon").style.cssText = "margin: 12%";
     document.getElementById("articuloMalecon").style.cssText = "background-color: #282828; color: white";
-    document.getElementsByClassName("button").style.cssText = "";
+    
 }
 function mouseOutMalecon(){
     document.getElementById("txt-malecon").style.cssText = "display: none";
