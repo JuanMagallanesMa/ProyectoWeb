@@ -205,3 +205,20 @@ footer {
 .contacto{
     font-size: 20px;
 }
+
+  .campo-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+ #mensajeEmergente {
+            display: none;
+            position: absolute;
+            left: 100%; /* Muestra al lado derecho del input */
+            margin-left: 10px; /* Espacio entre el input y el mensaje */
+            padding: 5px;
+            background: transparent;
+            color: black;
+            font-size: 14px;
+            white-space: nowrap; 
+        }
