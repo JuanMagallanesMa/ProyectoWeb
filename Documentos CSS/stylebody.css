@@ -9,11 +9,14 @@ body{
 }
 iframe{
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 275px;
+    overflow: hidden
+    
 }
 header{
-    height: 280px;
+    width: 100%;
+    height: 275px;
+    
 }
 
 .button  {
@@ -49,6 +52,24 @@ header{
     
 }
 
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    box-sizing: border-box;
+}
 
 .Principal{
     height: 70vh;
@@ -99,7 +120,7 @@ main{
 }
 
 
-.Sobre-atracciones{
+.Sobre-tema{
     box-sizing: border-box;
     height: 90vh;
     display: flex;
@@ -108,19 +129,30 @@ main{
     margin: auto 100px;
 }
 
-.Sub-atracciones{
+.Sub-tema{
     box-sizing: border-box;
     text-align: center;
     padding: 25px 70px;
 }
 
-.Sub-atracciones h2{
+.Sub-tema h2{
     font-size: 50px;
 }
 
-.Sub-atracciones p {
+.Sub-tema p {
     text-align: justify;
     font-size: 25px;
+}
+
+.fondo-2{
+    background-image: url('../Img/Presentacion-sobre-habitaciones.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
 }
 
 .fondo-2{
@@ -137,22 +169,24 @@ main{
 .Contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    height: 80vh;
 }
 
 .Contenedor-img {
     overflow: hidden;
-    
 }
 
 .Contenedor-img img {
-    width: 100%;
     height: 100%;
+    width: 100%; 
+    display: block;
 }
 
 .Contenedor-txt {
+    margin: auto 30px;
+    padding: 20px;
     text-align: center;
-    align-items: center;
+
 }
 
 .Contenedor-txt h2 {
@@ -165,12 +199,3 @@ main{
 
 
 
-
-.contenedor-button, .contenido{
-    display: none;
-}
-.contenedor-art{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
