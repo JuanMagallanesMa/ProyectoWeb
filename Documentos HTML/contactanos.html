@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Hotel</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <link rel="stylesheet" href= "../Documentos CSS/stylecontactanos.css">
+    <link rel="stylesheet" href="../Documentos CSS/stylecontactanos.css">
+    <script src="scriptcontactanos.js" defer></script> <!-- Script externo para funcionalidades adicionales -->
 </head>
 
 <body>
-
     <header>
-        <section id="banner" ><img src="https://cache.marriott.com/content/dam/marriott-renditions/MCOSA/mcosa-lobby-0028-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" ></section>
-        <section id="logo"  ><a href="../Documentos HTML/home.html"><img  src="../Img/logoandy.png"></a></section>
+        <section id="banner"><img src="https://cache.marriott.com/content/dam/marriott-renditions/MCOSA/mcosa-lobby-0028-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*"></section>
+        <section id="logo"><a href="../Documentos HTML/home.html"><img src="../Img/logoandy.png"></a></section>
         <section id="login">
             <div id="iniciarsesion">
                 <a href="">Iniciar Sesion</a>
@@ -27,29 +26,28 @@
             </div>
         </section>
         <nav>
-            
             <a href="../Documentos HTML/habitaciones.html">Habitaciones y Suites</a>
             <a href="../Documentos HTML/eventos.html">Reuniones y Eventos</a>
             <a href="../Documentos HTML/gastronomia.html">Gastronomia</a>
-            <a href="../Documentos HTML/Atracciones.html">Atracciones</a> 
-            <a href="../Documentos HTML/contactanos.html">Contactanos</a> 
+            <a href="../Documentos HTML/Atracciones.html">Atracciones</a>
+            <a href="../Documentos HTML/contactanos.html">Contactanos</a>
         </nav>
     </header>
-    <main> 
+    <main>
         <section id="form-section">
             <h1>Formulario de Contacto</h1>
             <form>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required><br>
+                <input type="text" id="name" name="name" required onmouseover="mostrarMensaje('Escribe tu nombre')"><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" required onmouseover="mostrarMensaje('Ingresa tu correo electrónico')"><br>
 
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <textarea id="message" name="message" rows="4" cols="50" required onmouseover="mostrarMensaje('Deja tu mensaje aquí')"></textarea><br>
 
                 <label for="subject">Asunto:</label>
-                <select id="subject" name="subject" required>
+                <select id="subject" name="subject" required onmouseover="mostrarMensaje('Selecciona el asunto de tu mensaje')">
                     <option value="consulta">Consulta</option>
                     <option value="soporte">Soporte</option>
                     <option value="otro">Otro</option>
@@ -81,7 +79,6 @@
             </address>
         </div>
     </footer>
-
 </body>
 
 </html>
