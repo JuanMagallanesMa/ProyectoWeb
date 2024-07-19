@@ -189,5 +189,9 @@ main{
     text-align: justify;
 }
 
-
+footer {
+    width: 100%;
+    height: 270px;
+    border: none;
+  }
 

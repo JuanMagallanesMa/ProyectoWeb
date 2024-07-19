@@ -1,41 +1,63 @@
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
-}
-.Pie-de-pagina{
     background-color: #282828;
-    height: 30vh;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 100%;
+  }
+  
+  .footer-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: justify;
-    color: white;
-}
+    justify-content: space-between;
+    max-width: 3000px;
+    margin: 0 auto;
+  }
 
-.Pie-de-pagina a{
+  .footer-section {
+    flex-basis: 30%;
+  }
+
+  .footer-section figure {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section figure img{
+    width: 350px;
+  }
+
+  .footer-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .correo{
+    color:#fff;
     text-decoration: none;
-    color: white;
-}
+  }
 
-.redes_sociales{
+  .social-media {
+    list-style: none;
+    padding: 0;
     display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.redes_sociales img{
-    border-radius: 20px;
-    width: 50px;
+  }
+  
+  .social-media li {
+    margin-right: 15px;
+  }
+  
+  .social-media img{
+    border-radius: 60px;
+    width: 50px; 
     height: 50px;
-}
+  }
 
-.contacto{
-    font-size: 20px;
-}
+   .footer-bottom {
+    background-color:#4b4949 ;
+    padding: 1px 0;
+    text-align: center;
+  }
 
   
