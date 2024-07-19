@@ -93,7 +93,8 @@ a{
     z-index: -1;
 }
 main{
-    float: left;
+    
+    width: 100%;
 }
 .overlay {
     position: absolute;
