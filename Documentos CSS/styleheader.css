@@ -16,31 +16,34 @@ header{
     background-color: #282828;
 }
 header #logo  {
-    
+
     width: 50%;
     height: 112px;
     float: left;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    box-sizing: border-box;
 }
 header #logo img {
    
     height: 70px;
-    margin: 8% 1%;
-    float: left;
+    
+    
 }
-#login {
+header #login {
+    
     float: left;
     width: 50%;
     height: 112px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     
 }
 #login nav {
-    box-sizing: border-box;
-    padding: 20px;
+    
     transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
 }
 
