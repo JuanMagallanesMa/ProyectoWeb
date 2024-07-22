@@ -83,7 +83,6 @@ a{
 }
 
 .fondo{
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,10 +91,16 @@ a{
     height: 70vh;
     z-index: -1;
 }
+
+.fondo img{
+    width: 100%; 
+    height: 700px;
+}
+
 main{
-    
     width: 100%;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -189,9 +194,44 @@ main{
     text-align: justify;
 }
 
+#form-section{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px auto;
+    width: 35%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+form{
+    width: 100%;
+}
+
+.button-form{
+    margin: auto;
+    width: 100px;
+}
+
 footer {
     width: 100%;
-    height: 270px;
+    height: 160px;
     border: none;
-  }
+}
 
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    box-sizing: border-box;
+}
