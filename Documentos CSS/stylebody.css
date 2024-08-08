@@ -90,11 +90,27 @@ a{
     width: 100%;
     height: 70vh;
     z-index: -1;
+    
 }
+@keyframes growShrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .fondo img{
     width: 100%; 
     height: 700px;
+    animation-name: growShrink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 main{
@@ -117,9 +133,21 @@ main{
     margin: 10%;
     padding: 50px;
     color: white;
-    
+    position: absolute;
+    animation-name: moveRightLeft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+@keyframes moveRightLeft {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 700px;
+    }
+  }
 
 .Sub-principal h2{
     font-size: 50px;
@@ -159,20 +187,60 @@ main{
     width: 100%;
     height: 90vh;
     z-index: -1;
+
 }
-
-
-
+#subimg{
+    animation-name: rotateAndGrow;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-fill-mode: both;
+  }
+  #subtem {
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 .Contenedor {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 60vh;
+    animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
-
+@keyframes colorChange {
+    0% {
+      background-color:   
+   rgb(80, 80, 80);
+      opacity: 1;
+    }
+    50% {
+      background-color: rgb(143, 143, 143);
+      opacity: 0.5;
+    }
+    100% {
+      background-color: rgb(255, 255, 255);
+      opacity: 1;
+    }
+  }
 .Contenedor-img {
     overflow: hidden;
+    animation-name: rotateAndGrow;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
 }
-
+@keyframes rotateAndGrow {
+    0% {
+      transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
 .Contenedor-img img {
     height: 100%;
     width: 100%; 
@@ -235,3 +303,4 @@ input, textarea, select, button {
     margin: 5px 0 20px;
     box-sizing: border-box;
 }
+
